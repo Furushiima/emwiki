@@ -15,8 +15,8 @@ COPY . /emwiki/
 # Clone emwiki-contents
 RUN git clone https://github.com/mimosa-project/emwiki-contents.git /emwiki/emwiki/emwiki-contents
 
-# Decompress mmlfiles
-WORKDIR /emwiki/emwiki/mmlfiles
+# Decompress emwiki-mmlfiles
+WORKDIR /emwiki/emwiki/emwiki-mmlfiles
 RUN sh decompress.sh
 
 # Build emparser

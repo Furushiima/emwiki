@@ -99,20 +99,20 @@
             "problemMatcher": [],
         },
         {
-            "label": "Compress mmlfiles",
+            "label": "Compress emwiki-mmlfiles",
             "type": "shell",
             "command": "sh compress.sh",
             "options": {
-                "cwd": "${workspaceFolder}/emwiki/mmlfiles"
+                "cwd": "${workspaceFolder}/emwiki/emwiki-mmlfiles"
             },
             "problemMatcher": [],
         },
         {
-            "label": "Decompress mmlfiles",
+            "label": "Decompress emwiki-mmlfiles",
             "type": "shell",
             "command": "sh decompress.sh",
             "options": {
-                "cwd": "${workspaceFolder}/emwiki/mmlfiles"
+                "cwd": "${workspaceFolder}/emwiki/emwiki-mmlfiles"
             },
             "problemMatcher": [],
         },
@@ -223,7 +223,7 @@
             "dependsOn": [
                 "Install packages",
                 "Clone emwiki-contents",
-                "Decompress mmlfiles",
+                "Decompress emwiki-mmlfiles",
                 "Build emparser",
                 "Install python packages",
                 "install node packages",

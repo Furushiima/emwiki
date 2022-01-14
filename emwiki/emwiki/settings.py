@@ -50,8 +50,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'mmlfiles', 'article', 'templates'),
-            os.path.join(BASE_DIR, 'mmlfiles', 'symbol', 'templates')
+            os.path.join(BASE_DIR, 'emwiki-mmlfiles', 'article', 'templates'),
+            os.path.join(BASE_DIR, 'emwiki-mmlfiles', 'symbol', 'templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -121,7 +121,7 @@ STATIC_URL = os.environ.get('STATIC_URL', '/static/')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'mmlfiles', 'graph', 'static'),
+    os.path.join(BASE_DIR, 'emwiki-mmlfiles', 'graph', 'static'),
 ]
 MEDIA_URL = os.environ.get('MEDIA_URL', '/media/')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
@@ -146,8 +146,8 @@ else:
 # Additional settings(Django framework doesn't refer these settings)
 
 # Directory configurations
-# mmlfiles
-MMLFIELS_DIR = os.path.join(BASE_DIR, 'mmlfiles')
+# emwiki-mmlfiles
+MMLFIELS_DIR = os.path.join(BASE_DIR, 'emwiki-mmlfiles')
 MML_ABSTR_DIR = os.path.join(MMLFIELS_DIR, 'abstr')
 MML_FMBIBS_DIR = os.path.join(MMLFIELS_DIR, 'fmbibs')
 MML_HTML_DIR = os.path.join(MMLFIELS_DIR, 'html')
