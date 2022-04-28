@@ -9,5 +9,11 @@
       <h1 class="display-3">emwiki</h1>
       <p>This Web application can write a TeX-format description in the Mizar Mathmatical Library (MML), and make the description follow the MML update. This Web application provides users with the function of adding, editing, and browsing description of MML on a Wiki format Web platform. If there is an update to the MML, link the description to the new MML by running the program on the server.</p>
     </div>
+    <news></news>
   </div>
+{% endblock %}
+
+{% block foot %}
+<!-- App -->
+<script src="{% static 'home/js/app.js'%}" type="module"></script>
 {% endblock %}
