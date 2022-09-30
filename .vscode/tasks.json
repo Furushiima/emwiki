@@ -222,6 +222,7 @@
             "dependsOrder": "sequence",
             "dependsOn": [
                 "Install packages",
+                "Install-python3.7.sh",
                 "Clone emwiki-contents",
                 "Decompress mmlfiles",
                 "Build emparser",
