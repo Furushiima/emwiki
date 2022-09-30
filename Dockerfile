@@ -13,7 +13,7 @@ RUN apt-get -y update && \
 COPY . /emwiki/
 
 # Clone emwiki-contents
-RUN git clone https://github.com/mimosa-project/emwiki-contents.git /emwiki/emwiki/emwiki-contents
+# RUN git clone https://github.com/mimosa-project/emwiki-contents.git /emwiki/emwiki/emwiki-contents
 
 # Decompress mmlfiles
 WORKDIR /emwiki/emwiki/mmlfiles
